@@ -1,0 +1,13 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: {{ include "bgdh.fullname" . }}
+  labels:
+    {{- include "bgdh.labels" . | nindent 4 }}
+spec:
+  host: bgd.apps.okd.example.com
+  port:
+    targetPort: {{ .Values.service.port }}
+  to:
+    kind: Service
+    name: {{ include "bgdh.fullname" . }}
