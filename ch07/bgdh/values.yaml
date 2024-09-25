@@ -22,7 +22,7 @@ securityContext: {}
 
 service:
   type: ClusterIP
-  port: http
+  port: 80
   targetPort: 8080
 
 resources: {}
