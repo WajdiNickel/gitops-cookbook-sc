@@ -3,5 +3,5 @@ name: bgdh
 description: Blue Green Deployment with Helm
 
 type: application
-version: 0.2.3
+version: 0.2.4
 appVersion: "1.16.0"
