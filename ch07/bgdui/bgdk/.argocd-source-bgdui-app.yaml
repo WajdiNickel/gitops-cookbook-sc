@@ -1,0 +1,3 @@
+kustomize:
+  images:
+  - quay.io/engarjur/bgd:1.1.0
